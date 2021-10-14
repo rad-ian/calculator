@@ -3,16 +3,31 @@
     width: 400px;
     height: 600px;
     border-radius: 20px;
-    padding-top: 50px;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr ;
-    grid-template-rows: [row1-start] 50px 50px 50px 50px 50px 50px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 100px repeat(4,1fr);
+    grid-template-areas: "display display display display";
+    gap: 10px;
+    padding: 10px;
 }
 #display{
+    font-size: 80px;
     background-color: cadetblue;
-    width: 80%;
-    height: 100px;
     border-radius: inherit;
-    margin-left: 10%;
-    
+    grid-area: display;
+    vertical-align: middle;
+    display: flex;
+    align-items: center;
+    text-align: right;
+    justify-content: flex-end;
+    padding: 0 10px;
+}
+.button{
+    font-size: 30px;
+}
+.digitButton{
+    background-color:lightgray;
+}
+#reset{
+    background-color: lightsalmon;
 }
