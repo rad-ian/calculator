@@ -9,22 +9,27 @@ function onButtonClick(event) {
     console.log(event.target.innerText)
 }
 
+function onResetButtonClick(event) {
+    isFirstDigitClick = true
+    displayElement.innerText = "0"
+    number1 = "0"
+    lastOperatorClicked = null
+}
+
 function onEqualButtonClick(event) {
-    const result = eval(number1 + lastOperatorClicked + displayElement.innerText)
-    console.log(result)
-    displayElement.innerText = result
+    if (lastOperatorClicked !== null) {
+        const result = eval(number1 + lastOperatorClicked + displayElement.innerText)
+        displayElement.innerText = result
+    }
 }
 
 function onOperatorButtonClick(event) {
     lastOperatorClicked = event.target.id
-    console.log(lastOperatorClicked, "operatorkliknięty")
     number1 = displayElement.innerText
     isFirstDigitClick = true
 }
 
 function onDigitButtonClick(event) {
-    console.log(event.target.innerText, "digitCliknięty")
-
     if (isFirstDigitClick === true) {
         displayElement.innerText = event.target.innerText
         isFirstDigitClick = false
@@ -52,7 +57,11 @@ function Init(event) {
         operatorButton.onclick = onOperatorButtonClick
     }
 
+    const resetButton = document.getElementById("reset")
+    resetButton.onclick = onResetButtonClick
+
     const equalButton = document.getElementById("equal")
     equalButton.onclick = onEqualButtonClick
+
 }
 
