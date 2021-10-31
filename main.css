@@ -6,7 +6,7 @@ body {
 #calculator {
     margin: 20px;
     min-width: 280px;
-    background-color: aqua;
+    background-color: rgb(112, 141, 141);
     width: 400px;
     height: 600px;
     border-radius: 20px;
@@ -42,8 +42,8 @@ body {
     min-width: 60px;
 }
 .digitButton {
-    background-color: lightgray;
+    background-color: rgb(211, 211, 211);
 }
 #reset {
-    background-color: lightsalmon;
+    background-color: rgb(253, 132, 132);
 }
