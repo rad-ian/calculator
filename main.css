@@ -42,7 +42,7 @@ body {
     min-width: 60px;
 }
 .digitButton {
-    background-color: lightgray;
+    background-color: rgb(238, 238, 238);
 }
 #reset {
     background-color: lightsalmon;
