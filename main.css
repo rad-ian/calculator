@@ -6,7 +6,7 @@ body {
 #calculator {
     margin: 20px;
     min-width: 280px;
-    background-color: aqua;
+    background-color: rgb(112, 141, 141);
     width: 400px;
     height: 600px;
     border-radius: 20px;
