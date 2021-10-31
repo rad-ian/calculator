@@ -42,8 +42,8 @@ body {
     min-width: 60px;
 }
 .digitButton {
-    background-color: rgb(238, 238, 238);
+    background-color: rgb(143, 143, 143);
 }
 #reset {
-    background-color: rgb(255, 201, 180);
+    background-color: rgb(199, 199, 199);
 }
